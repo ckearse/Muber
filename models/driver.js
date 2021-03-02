@@ -23,7 +23,7 @@ const DriverSchema = new Schema({
 				var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 				return emailRegex.test(email);
 			},
-			message: 'Please enter a valid email address',
+			message: 'Please enter a valid email address.',
 		},
 	},
 	driving: {
