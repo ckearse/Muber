@@ -1,5 +1,4 @@
 /** @format */
-const drivers_controller = require('./../controllers/drivers_controller');
 const driver_controller = require('./../controllers/drivers_controller');
 
 module.exports = (app) => {

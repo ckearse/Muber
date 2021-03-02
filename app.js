@@ -7,7 +7,12 @@ const routes = require('./routes/routes');
 const app = express();
 
 if (process.env.NODE_ENV !== 'test') {
-	mongoose.connect('mongodb://localhost/muber', { useNewUrlParser: true });
+	mongoose.connect('mongodb://localhost/muber', {
+		useNewUrlParser: true,
+		useCreateIndex: true,
+		useFindAndModify: false,
+		useUnifiedTopology: true,
+	});
 }
 
 app.use(bodyParser.json());
